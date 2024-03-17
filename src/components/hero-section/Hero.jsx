@@ -1,22 +1,20 @@
-import React from "react";
-import "./hero-style.css"
+import "./hero-style.css";
 
-
-
-function Hero(props) {
-    return (
-        <>
-            <div className={props.cName}>
-                <img src={props.heroImg} alt="Heroimage" />
-                <div className="hero-text">
-                    <h1>{props.title}</h1>
-                    <p>{props.text}</p>
-                    <a href={props.url} className={props.btnClass}>{props.buttonText}</a>
-                </div>
-            </div>
-        </>
-    );
+function Hero({ cName, heroImg, title, text, url, btnClass, buttonText }) {
+	return (
+		<>
+			<div className={cName}>
+				<img src={heroImg} alt="Heroimage" />
+				<div className="hero-text">
+					<h1>{title}</h1>
+					<p>{text}</p>
+					<a href={url} className={btnClass}>
+						{buttonText}
+					</a>
+				</div>
+			</div>
+		</>
+	);
 }
-
 
 export default Hero;

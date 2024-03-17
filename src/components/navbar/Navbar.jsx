@@ -1,39 +1,38 @@
-import { Component } from "react";
+import { useState } from "react";
 import "./navbar-style.css";
 import { MenuItems } from "./menu-item";
-import { Link } from "@mui/material";
+import { Link, NavLink } from "react-router-dom";
 
-class Navbar extends Component {
-	state = { clicked: false };
-	handleClick = () => {
-		this.setState({ clicked: !this.state.clicked });
+function Navbar() {
+	const [clicked, setClicked] = useState(false);
+	const handleClick = () => {
+		setClicked(!clicked);
 	};
-	render() {
-		return (
-			<nav className="nav">
-				<h1 className="nav-logo">
-					<Link href="/" sx={{ textDecoration: "none", color: "#000" }}>
-						TFL
-					</Link>
-				</h1>
-				<div className="hamburger" onClick={this.handleClick}>
-					<i className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}></i>
-				</div>
 
-				<ul className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
-					{MenuItems.map((item, index) => {
-						return (
-							<li key={index}>
-								<a className={item.cName} href={item.url}>
-									<i className={item.icon}></i> {item.title}
-								</a>
-							</li>
-						);
-					})}
-				</ul>
-			</nav>
-		);
-	}
+	return (
+		<nav className="nav">
+			<h1 className="nav-logo">
+				<Link to={"/"} style={{ textDecoration: "none", color: "#000" }}>
+					TFL
+				</Link>
+			</h1>
+			<div className="hamburger" onClick={handleClick}>
+				<i className={clicked ? "fas fa-times" : "fas fa-bars"}></i>
+			</div>
+
+			<ul className={clicked ? "nav-menu active" : "nav-menu"}>
+				{MenuItems.map((item, index) => {
+					return (
+						<li key={index}>
+							<NavLink className={item.cName} to={item.url}>
+								<i className={item.icon}></i> {item.title}
+							</NavLink>
+						</li>
+					);
+				})}
+			</ul>
+		</nav>
+	);
 }
 
 export default Navbar;
