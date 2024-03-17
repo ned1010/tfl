@@ -1,0 +1,85 @@
+.event {
+	margin: 4rem 6rem;
+	color: #2a2a2a;
+}
+
+.eventCards {
+	margin-top: 3rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.event-cards {
+	width: 32%;
+	text-align: start;
+	box-shadow: 0 5px 25px 2px rgba(0, 0, 0, 0.18);
+	border-radius: 7px;
+	cursor: pointer;
+	padding: 1rem 0.8rem;
+	position: relative;
+}
+
+.event-image {
+	height: 200px;
+	overflow: hidden;
+	border-radius: 7px;
+}
+
+.event-image img {
+	transition: 0.3s ease-in-out;
+	width: 100%;
+	height: 100%;
+	border-radius: 7px;
+}
+
+.event-image:hover img {
+	transform: scale(1.3);
+}
+
+.event-cards h4 {
+	font-size: 1.3rem;
+	padding: 0.9rem 0 0.2rem 0;
+}
+
+.event-text {
+	margin: 1rem 0 3rem;
+}
+
+.googleform-link {
+	padding: 0.5rem 1rem;
+	white-space: nowrap;
+	border-radius: 0.3rem;
+	border: none;
+	font-weight: 600;
+	transition: 0.2s ease-in-out;
+	font-size: 1rem;
+	cursor: pointer;
+	background: rgba(180, 180, 184, 0.4);
+	text-decoration: none;
+	color: #000;
+	position: absolute;
+	right: 50%;
+	bottom: 2rem;
+	transform: translate(50%, 50%);
+}
+
+.googleform-link:hover {
+	background-color: black;
+	color: white;
+}
+
+@media screen and (max-width: 850px) {
+	.event {
+		margin: 4rem 2rem;
+	}
+
+	.eventCards {
+		flex-direction: column;
+	}
+
+	.event-cards {
+		width: 100%;
+		margin-bottom: 1.5rem;
+	}
+}
