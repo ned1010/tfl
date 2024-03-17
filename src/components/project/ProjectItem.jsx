@@ -10,7 +10,7 @@ function ProjectItem({ image, heading, description, path }) {
 			</div>
 			<h4>{heading}</h4>
 			<p className="project-text">{description}</p>
-			<Link className="project-btn" to={`/projects/${path}`}>
+			<Link className="project-btn" to={`/project/${path}`}>
 				More
 			</Link>
 		</div>
