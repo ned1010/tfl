@@ -87,4 +87,7 @@
 		width: 100%;
 		margin-bottom: 1.5rem;
 	}
+	.found-project {
+		margin: 4rem 2rem;
+	}
 }
