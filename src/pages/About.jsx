@@ -5,6 +5,7 @@ import Hero from '@/components/hero-section/Hero';
 import AboutImg from "@/assets/about.jpg";
 import Footer from '@/components/footer/Footer';
 import About from '@/components/about/About';
+import VolunteerLink from '../components/volunteer-form/VolunteerLink';
 
 
 function AboutPage() {
@@ -17,6 +18,7 @@ function AboutPage() {
                 title="About"
             />
             <About />
+            <VolunteerLink />
             <Footer />
 
         </div>

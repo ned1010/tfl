@@ -1,5 +1,5 @@
 .about-container {
-    margin: 4rem 6rem;
+    margin: 4rem 6rem 2rem;
     text-align: start;
 }
 
@@ -10,14 +10,23 @@
 
 .about-container p {
     padding-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.about-container p:last-child {
+    padding-bottom: 0;
 }
 
 @media screen and (max-width:850px) {
     .about-container {
-        margin: 4rem 2rem;
+        margin: 4rem 2rem 0;
     }
 
     .about-container p {
         padding-bottom: 3rem;
+        font-size: 1rem;
+    }
+    .about-container p:last-child {
+        padding-bottom: 0;
     }
 }

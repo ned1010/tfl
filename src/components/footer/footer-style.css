@@ -1,65 +1,74 @@
 .footer {
-    background-color: black;
-    padding: 4rem 6rem;
-    color: white;
+	background-color: black;
+	padding: 4rem 6rem;
+	color: white;
 }
 
 .top {
-    display: flex;
-    align-items: center;
-    text-align: start;
-    justify-content: space-between;
-    flex-wrap: wrap;
+	display: flex;
+	align-items: center;
+	text-align: start;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
-.social i{
-    color: white;
-    font-size: 2rem;
-    margin-left: 1rem;
+.social i {
+	color: white;
+	font-size: 2rem;
+	margin-left: 1rem;
 }
 
-.social i:hover{
-    color: #01959a;
+.social i:hover {
+	color: #01959a;
 }
 
-.bottom{
-    padding-top: 2rem;
-    text-align: start;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.bottom {
+	padding-top: 2rem;
+	text-align: start;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
-
-.col{
-    display: flex;
-    flex-direction: column;
+.col {
+	display: flex;
+	flex-direction: column;
 }
 
-.col h4{
-    font-size: 1.2rem;
-    padding: 1rem 0 .8rem 0;
+.col h4 {
+	font-size: 1.5rem;
+	padding: 1rem 0 0.8rem 0;
 }
 
 .col a {
-    text-decoration: none;
-    color: white;
-    padding-bottom: .4rem;
-    font-size: 1rem;
+	text-decoration: none;
+	color: white;
+	padding-bottom: 0.4rem;
+	font-size: 1rem;
+}
+
+.fa-solid {
+    margin-right: 0.5rem;
 }
 
 @media screen and (max-width: 850px) {
+	.footer {
+		padding: 4rem 2rem;
+	}
 
-    .footer{
-        padding: 4rem 2rem;
-    }
+	.footer h1 {
+		font-size: 1.5rem;
+	}
 
-    .social i{
-        margin: 1rem 1rem 0 0;
-    }
-    
-    .col{
-        width: 50%;
+	.social i {
+		margin: 1rem 1rem 0 0;
+	}
+
+	.col {
+		width: 50%;
+	}
+
+    .col h4 {
+        font-size: 1.5rem;
     }
 }
-

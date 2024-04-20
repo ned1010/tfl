@@ -20,20 +20,20 @@ const projects = [
 	{
 		id: "yak",
 		mainImg: YakProjectPic,
-		title: "Yak",
+		title: "Youth Association of Kargyam",
 		brief: "YAY is the project initiative between some people and some.",
 		items: [
 			{
 				cName: "first-desc",
 				description:
-					"We founded YAK in 2012 with a vision to ensure all children in Kargyam have access to quality education with the Teach for Ladakh initiative and we intend to do the same across Ladakh. Over the years this vision has grown into a ‘movement of change’ with the youth of the village leading the way.",
+					"In 2012, a group of caring people in Kargyam came together to start the Youth Association of Kargyam (YAK). They had a big dream: to make sure every child in their village could go to a good school. They began with the Teach for Ladakh program, aiming to bring quality education to their community.",
 				img1: image1,
 				img2: image2,
 			},
 			{
 				cName: "second-desc",
 				description:
-					"We founded YAK in 2012 with a vision to ensure all children in Kargyam have access to quality education with the Teach for Ladakh initiative and we intend to do the same across Ladakh. Over the years this vision has grown into a ‘movement of change’ with the youth of the village leading the way.",
+					"Over time, their dream grew into something even bigger. It became a movement led by the young people of the village. They were determined to change things for the better. Now, YAK is all about giving kids in Ladakh the chance to learn and succeed. It's a story of people coming together to make a real difference in their community.",
 				img1: image3,
 				img2: image4,
 			},

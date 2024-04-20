@@ -31,13 +31,14 @@
 	display: inline;
 }
 
-.invalid-email {
+.invalid {
 	color: red;
 }
 
-.date-label, 
-.resume-label{
-	margin-top: 2rem;
+.date-label,
+.resume-label,
+.subject {
+	margin-top: 1rem;
 	margin-bottom: -2rem;
 }
 .register-btn {
@@ -66,6 +67,50 @@
 .email-address {
 	font-style: italic;
 }
+
+
+/* Volunteer Link Style  */
+.sign-up {
+	margin: 4rem 6rem;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	padding: 4rem 0;
+	gap: 1rem;
+}
+
+.volunteer-link .title {
+	font-size: 2rem;
+}
+
+.volunteer-link .subtitle {
+	font-size: 1.5rem;
+	color: #7d7c7c;
+	margin: 1.5rem 0 2rem;
+}
+
+.volunteer-link button {
+	background: #000;
+	padding: 1rem;
+	border-radius: 3rem;
+	background-color: rgba(180, 180, 184, 0.9);
+	border: none;
+}
+
+.volunteer-link a {
+	text-decoration: none;
+	font-size: 1.5rem;
+	color: #000;
+}
+
+.volunteer-link button:hover {
+
+	background-color: #01959a;
+}
+
+.volunteer-link a:hover {
+	color: #fff;
+}
+
 @media screen and (max-width: 850px) {
 	.form-container {
 		margin: 4rem 2rem;
@@ -81,5 +126,28 @@
 
 	.form-container h1 {
 		font-size: 1.5rem;
+	}
+
+	.sign-up {
+		margin: 2rem;
+		grid-template-columns: repeat(1, 1fr);
+		gap: 3rem;
+		padding: 0;
+	}
+
+	.volunteer-link .title {
+		font-size: 1.5rem;
+	}
+
+	.volunteer-link .subtitle {
+		font-size: 1.1rem;
+		margin: 1rem 0;
+	}
+
+	.volunteer-link button {
+		padding: 0.5rem;
+	}
+	.volunteer-link a {
+		font-size: 1rem;
 	}
 }

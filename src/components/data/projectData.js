@@ -5,7 +5,7 @@ import YouthHockey from "@/assets/hockey1.jpg";
 const projectData = [
 	{
 		id: "yak",
-		heading: "YAK",
+		heading: "Youth Association of Kargyam",
 		description:
 			"We founded YAK in 2012 with a vision to ensure all children in Kargyam have access to quality education with the Teach for Ladakh initiative and we intend to do the same across Ladakh. Over the years this vision has grown into a ‘movement of change’ with the youth of the village leading the way.",
 		img: YakProject,

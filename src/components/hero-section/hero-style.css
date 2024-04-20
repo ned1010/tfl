@@ -22,7 +22,7 @@ img {
 
 .hero-text {
 	position: absolute;
-	top: 55%;
+	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: 100%;
@@ -38,9 +38,9 @@ img {
 }
 
 .hero-text p {
-	font-size: 1.3rem;
+	font-size: 1.75rem;
 	color: white;
-	padding: 0.5rem 0 2rem 0;
+	padding: 2rem;
 }
 
 .hero-text .show {
@@ -57,7 +57,9 @@ img {
 @media screen and (max-width: 555px) {
 	.hero-text h1 {
 		padding: 10px 20px;
+		font-size: 2rem;
 	}
+
 
 	.hero-text p {
 		font-size: 1.1rem;

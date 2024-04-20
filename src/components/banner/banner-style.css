@@ -1,11 +1,18 @@
 .banner {
-	margin: 4rem 6rem;
+	margin: 4rem 6rem 8rem;
 }
 
 .banner h1 {
-	font-size: 3rem;
+	font-size: 2rem;
 }
 
+.banner p {
+	font-size: 1.1rem;
+}
+
+.banner h2 {
+	font-size: 1.5rem;
+}
 .first-desc {
 	display: flex;
 	align-items: center;
@@ -59,12 +66,17 @@
 	right: 0;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 850px) {
 	.banner {
-		margin: 4rem 2rem;
+		margin: 4rem 2rem 4rem;
 	}
 	.banner h1 {
 		font-size: 1.5rem;
+		font-weight: 800;
+	}
+
+	.banner h2 {
+		font-size: 1.25rem;
 	}
 
 	.first-desc {

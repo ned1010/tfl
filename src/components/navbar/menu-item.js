@@ -11,12 +11,12 @@ export const MenuItems = [
 		cName: "nav-links",
 		icon: "fa-solid fa-briefcase",
 	},
-	{
-		title: "Events",
-		url: "/event",
-		cName: "nav-links",
-		icon: "fa-solid fa-calendar-days",
-	},
+	// {
+	// 	title: "Events",
+	// 	url: "/event",
+	// 	cName: "nav-links",
+	// 	icon: "fa-solid fa-calendar-days",
+	// },
 	{
 		title: "Volunteer",
 		url: "/volunteer",

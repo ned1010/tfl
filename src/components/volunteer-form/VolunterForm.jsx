@@ -14,11 +14,27 @@ function VolunteerForm() {
 		question: "",
 	});
 
-	const [invalidEmail, setInvalidEmail] = useState("");
+	const [errorMessage, setErrorMessage] = useState({
+		email: "",
+		date: "",
+		resume: "",
+	});
 
+	//email validation
 	const validateEmail = (email) => {
 		const emailRegex = /^[a-zA-Z0-9_+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,7}$/;
 		return emailRegex.test(email);
+	};
+
+	//validate date of voluntee
+	const validateDate = (year) => {
+		const chosenDate = new Date(year);
+		const today = new Date();
+		return chosenDate > today;
+	};
+
+	const validateResume = (response) => {
+		return response.toLowerCase() === "yes";
 	};
 
 	const handleInput = (event) => {
@@ -34,19 +50,49 @@ function VolunteerForm() {
 		method: "POST",
 		body: JSON.stringify(volunteerData),
 	};
-	const url = "https://api.apispreadsheets.com/data/pyodtgTPpObCJV83/";
+	const url = "https://api.apispreadsheets.com/data/4QGFiWX9uBQ0HLbq/";
 
 	const submitForm = (event) => {
 		event.preventDefault();
-		console.log("got clicked to submit form");
-		// console.log(volunteerData);
+		setErrorMessage({
+			email: "",
+			date: "",
+			resume: "",
+		});
 
-		//validate email addresses entered
+		let hasError = false;
+
+		// Validate email
 		if (!validateEmail(volunteerData.email)) {
-			setInvalidEmail("Please enter a valid email address.");
-			return;
+			setErrorMessage((prevState) => ({
+				...prevState,
+				email: "Enter a valid email address",
+			}));
+			hasError = true;
 		}
 
+		// Validate date
+		if (!validateDate(volunteerData.date)) {
+			setErrorMessage((prevState) => ({
+				...prevState,
+				date: "Enter a valid date",
+			}));
+			hasError = true;
+		}
+
+		// Validate resume
+		if (!validateResume(volunteerData.resume)) {
+			setErrorMessage((prevState) => ({
+				...prevState,
+				resume: "Please send the resume to the email in the header.",
+			}));
+			hasError = true;
+		}
+
+		// If there's any error, return without submitting the form
+		if (hasError) {
+			return;
+		}
 		//create a post request here
 		fetch(url, config)
 			.then((res) => {
@@ -62,7 +108,11 @@ function VolunteerForm() {
 						resume: "",
 						question: "",
 					});
-					setInvalidEmail("");
+					setErrorMessage({
+						email: "",
+						date: "",
+						resume: "",
+					});
 				} else {
 					alert("there is error sending form");
 					console.log(res.status);
@@ -75,7 +125,7 @@ function VolunteerForm() {
 
 	return (
 		<div className="form-container">
-			<h1> Teach for Ladakh program volunteering registration</h1>
+			<h1>Volunteer for Youth Association of Kargyam</h1>
 			<h4>
 				Please send your resume to{" "}
 				<Link
@@ -103,14 +153,17 @@ function VolunteerForm() {
 					name="email"
 					required
 				/>
-				<p className="invalid-email">{invalidEmail}</p>
-				<textarea
-					placeholder="what subject/s would you like to teach"
-					value={volunteerData.subject}
-					onChange={handleInput}
-					name="subject"
-					required
-				/>
+				<p className="invalid">{errorMessage.email}</p>
+				<label htmlFor="subjects" className="subject">
+					Which subject/s would you like to teach?{" "}
+				</label>
+				<select id="subjects" name="subject" onChange={handleInput} value={volunteerData.value}>
+					<option value="English">English</option>
+					<option value="Mathematics">Mathematics</option>
+					<option value="Science">Science</option>
+					<option value="Social Studies">Social Studies</option>
+					<option value="Arts">Arts</option>
+				</select>
 				<label htmlFor="date" className="date-label">
 					When are you available to volunteer?
 				</label>
@@ -122,6 +175,8 @@ function VolunteerForm() {
 					name="date"
 					required
 				/>
+
+				<p className="invalid">{errorMessage.date}</p>
 				<label htmlFor="resume" className="resume-label">
 					Did you send the resume to our email? If so, type yes
 				</label>
@@ -133,6 +188,7 @@ function VolunteerForm() {
 					name="resume"
 					required
 				/>
+				<p className="invalid">{errorMessage.resume}</p>
 
 				<textarea
 					placeholder="Any Questions"

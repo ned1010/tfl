@@ -13,8 +13,8 @@ const Banner = () => {
 
 			<BannerData
 				cName="first-desc"
-				heading="Teach for Ladakh"
-				text="Teach for Ladakh is an initiative by the Youth Association Kargyam to provide supplementary teaching learning resources in schools across remote Ladakh. "
+				heading="Youth Association of Kargyam"
+				text="Yak is an initiative to provide supplementary learning resources in schools across remote Ladakh. "
 				image1={Teach1}
 				image2={Teach3}
 			/>

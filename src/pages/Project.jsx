@@ -4,6 +4,7 @@ import Hero from "@/components/hero-section/Hero";
 import ProjectImg from "@/assets/teach10.jpg";
 import Footer from "@/components/footer/Footer";
 import Project from "@/components/project/Project";
+import VolunteerLink from "../components/volunteer-form/VolunteerLink";
 
 function ProjectPage() {
 	return (
@@ -12,6 +13,7 @@ function ProjectPage() {
 			<Hero cName="hero-mid" heroImg={ProjectImg} title="Project" />
 
 			<Project />
+			<VolunteerLink />
 
 			<Footer />
 		</div>

@@ -13,7 +13,7 @@ function Navbar() {
 		<nav className="nav">
 			<h1 className="nav-logo">
 				<Link to={"/"} style={{ textDecoration: "none", color: "#000" }}>
-					TFL
+					YAK
 				</Link>
 			</h1>
 			<div className="hamburger" onClick={handleClick}>
