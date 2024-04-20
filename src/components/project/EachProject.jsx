@@ -9,6 +9,7 @@ import projects from "@/components/data/projects";
 
 import NotFound from "./NotFound";
 import FoundProject from "./FoundProject";
+import VolunteerLink from "../volunteer-form/VolunteerLink";
 function EachProject() {
 	const { path } = useParams();
 
@@ -41,6 +42,7 @@ function EachProject() {
 						);
 					})}
 				</div>
+				<VolunteerLink />
 
 				<Footer />
 			</div>

@@ -1,21 +1,21 @@
-import YakProject from "@/assets/teach2.jpg";
+// import YakProject from "@/assets/teach2.jpg";
 import WinterCamp from "@/assets/teach10.jpg";
-import YouthHockey from "@/assets/hockey1.jpg";
+import YouthHockey from "@/assets/hockey4.jpg";
 
 const projectData = [
-	{
-		id: "yak",
-		heading: "Youth Association of Kargyam",
-		description:
-			"We founded YAK in 2012 with a vision to ensure all children in Kargyam have access to quality education with the Teach for Ladakh initiative and we intend to do the same across Ladakh. Over the years this vision has grown into a ‘movement of change’ with the youth of the village leading the way.",
-		img: YakProject,
-        path:"yak"
-	},
+	// {
+	// 	id: "yak",
+	// 	heading: "Youth Association of Kargyam",
+	// 	description:
+	// 		"We founded YAK in 2012 with a vision to ensure all children in Kargyam have access to quality education with the Teach for Ladakh initiative and we intend to do the same across Ladakh. Over the years this vision has grown into a ‘movement of change’ with the youth of the village leading the way.",
+	// 	img: YakProject,
+    //     path:"yak"
+	// },
 	{
 		id: "winter-camp",
 		heading: "Winter Camp",
 		description:
-			"Winter camp is designed to reverse the steady decline in inventiveness, discovery and creative thinking seen in children after they start school. Winter Camps use local youth as mentors, building their skills while making the village a happenin’ place in winter. ",
+			"Winter camp is designed to reverse the steady decline in inventiveness, discovery and creative thinking seen in children after they start school. Winter Camps use local youth as mentors, building their skills while making the village a happening place in winter. ",
 		img: WinterCamp,
         path: "winter-camp"
 	},

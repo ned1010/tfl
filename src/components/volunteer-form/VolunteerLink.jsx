@@ -6,7 +6,7 @@ function VolunteerLink() {
 		<div className="sign-up">
 			<div className="volunteer-link">
 				<h2 className="title">
-					Empowering Youths In Ladakh: Ensuring Everyone has Equal Access to Education
+					Empowering Youths In Kargyam: Ensuring Everyone has Equal Access to Education
 				</h2>
 				<h5 className="subtitle">
 					Your small acts makes a lasting difference's in someone's life.

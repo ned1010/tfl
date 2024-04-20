@@ -11,6 +11,9 @@
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
+.logo p {
+	font-size: 1.5rem;
+}
 
 .social i {
 	color: white;
@@ -36,7 +39,7 @@
 }
 
 .col h4 {
-	font-size: 1.5rem;
+	font-size: 2rem;
 	padding: 1rem 0 0.8rem 0;
 }
 
@@ -44,7 +47,7 @@
 	text-decoration: none;
 	color: white;
 	padding-bottom: 0.4rem;
-	font-size: 1rem;
+	font-size: 1.5rem;
 }
 
 .fa-solid {
@@ -71,4 +74,11 @@
     .col h4 {
         font-size: 1.5rem;
     }
+
+	.col a {
+		font-size: 1rem;
+	}
+	.logo p {
+		font-size: 1rem;
+	}
 }

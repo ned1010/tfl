@@ -17,28 +17,28 @@ import hockey3 from "@/assets/hockey3.jpg";
 import hockey4 from "@/assets/hockey4.jpg";
 
 const projects = [
-	{
-		id: "yak",
-		mainImg: YakProjectPic,
-		title: "Youth Association of Kargyam",
-		brief: "YAY is the project initiative between some people and some.",
-		items: [
-			{
-				cName: "first-desc",
-				description:
-					"In 2012, a group of caring people in Kargyam came together to start the Youth Association of Kargyam (YAK). They had a big dream: to make sure every child in their village could go to a good school. They began with the Teach for Ladakh program, aiming to bring quality education to their community.",
-				img1: image1,
-				img2: image2,
-			},
-			{
-				cName: "second-desc",
-				description:
-					"Over time, their dream grew into something even bigger. It became a movement led by the young people of the village. They were determined to change things for the better. Now, YAK is all about giving kids in Ladakh the chance to learn and succeed. It's a story of people coming together to make a real difference in their community.",
-				img1: image3,
-				img2: image4,
-			},
-		],
-	},
+	// {
+	// 	id: "yak",
+	// 	mainImg: YakProjectPic,
+	// 	title: "Youth Association of Kargyam",
+	// 	brief: "YAY is the project initiative between some people and some.",
+	// 	items: [
+	// 		{
+	// 			cName: "first-desc",
+	// 			description:
+	// 				"In 2012, a group of caring people in Kargyam came together to start the Youth Association of Kargyam (YAK). They had a big dream: to make sure every child in their village could go to a good school. They began with the Teach for Ladakh program, aiming to bring quality education to their community.",
+	// 			img1: image1,
+	// 			img2: image2,
+	// 		},
+	// 		{
+	// 			cName: "second-desc",
+	// 			description:
+	// 				"Over time, their dream grew into something even bigger. It became a movement led by the young people of the village. They were determined to change things for the better. Now, YAK is all about giving kids in Ladakh the chance to learn and succeed. It's a story of people coming together to make a real difference in their community.",
+	// 			img1: image3,
+	// 			img2: image4,
+	// 		},
+	// 	],
+	// },
 	{
 		id: "winter-camp",
 		mainImg: WinterProjectPic,
@@ -48,14 +48,14 @@ const projects = [
 			{
 				cName: "first-desc",
 				description:
-					"We founded YAK in 2012 with a vision to ensure all children in Kargyam have access to quality education with the Teach for Ladakh initiative and we intend to do the same across Ladakh. Over the years this vision has grown into a ‘movement of change’ with the youth of the village leading the way.",
+					"Winter camp offers a creative haven during chilly months, reigniting kids' curiosity after the monotony of school. Village older kids serve as mentors, fostering a cool atmosphere while gaining new knowledge themselves, making the camp both fun and educational. ",
 				img1: winter1,
 				img2: winter2,
 			},
 			{
 				cName: "second-desc",
 				description:
-					"We founded YAK in 2012 with a vision to ensure all children in Kargyam have access to quality education with the Teach for Ladakh initiative and we intend to do the same across Ladakh. Over the years this vision has grown into a ‘movement of change’ with the youth of the village leading the way.",
+					"These camps are magical places where kids explore creativity and develop innovative ideas. Older mentors also learn and grow while guiding younger ones. The entire village buzzes with excitement during winter, all thanks to these wonderful camps.",
 				img1: winter3,
 				img2: winter4,
 			},
@@ -65,19 +65,19 @@ const projects = [
 		id: "youth-hockey-camp",
 		mainImg: HockeyProjectPic,
 		title: "Youth Hockey Development Camp",
-		brief: "Youth Hockey Development Camp is the project initiative between some people and some.",
+		brief: "Youth hockey camp fosters skills, confidence, teamwork through play and training",
 		items: [
 			{
 				cName: "first-desc",
 				description:
-					"We founded YAK in 2012 with a vision to ensure all children in Kargyam have access to quality education with the Teach for Ladakh initiative and we intend to do the same across Ladakh. Over the years this vision has grown into a ‘movement of change’ with the youth of the village leading the way.",
+					"YHDC (Youth Hockey Development Camp) is where kids learn and have fun with ice hockey. It's more than a game—it fosters confidence and teamwork. Through activities and training, children develop vital skills while enjoying skating and scoring goals.",
 				img1: hockey1,
 				img2: hockey2,
 			},
 			{
 				cName: "second-desc",
 				description:
-					"We founded YAK in 2012 with a vision to ensure all children in Kargyam have access to quality education with the Teach for Ladakh initiative and we intend to do the same across Ladakh. Over the years this vision has grown into a ‘movement of change’ with the youth of the village leading the way.",
+					"YHDC goes beyond the rink, fostering unity among participants who train to represent Kargyam in hockey tournaments. Each session enhances hockey skills and instills discipline and sportsmanship values",
 				img1: hockey3,
 				img2: hockey4,
 			},

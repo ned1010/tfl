@@ -8,13 +8,11 @@ import Teach18 from "@/assets/teach18.jpg";
 const Banner = () => {
 	return (
 		<div className="banner">
-			<h1>Here is your change to make a difference</h1>
-			<p>Every effort makes a huge impact in someone's life</p>
 
 			<BannerData
 				cName="first-desc"
 				heading="Youth Association of Kargyam"
-				text="Yak is an initiative to provide supplementary learning resources in schools across remote Ladakh. "
+				text="We founded YAK in 2012 with a vision to ensure all children in Kargyam have access to quality education Over the years this vision has grown into a ‘movement of change’ with the youth of the village leading the way. "
 				image1={Teach1}
 				image2={Teach3}
 			/>

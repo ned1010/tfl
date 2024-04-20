@@ -16,7 +16,7 @@ function HomePage() {
 				cName="hero"
 				heroImg={HomeImg}
 				title="Youth Association of Kargyam"
-				text="Empowering Youths in Ladakh by Bridging the Education Gaps"
+				text="Empowering Youths in Kargyam by Bridging the Education Gaps"
 			/>
 			<Banner />
 			{/* <Event /> */}

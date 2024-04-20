@@ -12,7 +12,7 @@
 }
 
 .project p {
-	font-size: 1.1rem;
+	font-size: 1.5rem;
 }
 .projectCards {
 	margin-top: 3rem;
@@ -21,6 +21,9 @@
 	gap: 7rem;
 }
 
+.found-project p {
+	font-size: 1.5rem;
+}
 .project-cards {
 	text-align: start;
 	box-shadow: 0 5px 25px 2px rgba(0, 0, 0, 0.18);
@@ -35,6 +38,12 @@
 	border-radius: 7px;
 }
 
+.desc-text p {
+	font-size: 1.5rem;
+}
+
+
+
 .project-image img {
 	transition: 0.3s ease-in-out;
 	width: 100%;
@@ -47,7 +56,7 @@
 }
 
 .project-cards h4 {
-	font-size: 1.3rem;
+	font-size: 2rem;
 	padding: 0.9rem 0 0.2rem 0;
 	text-align: center;
 }
@@ -60,7 +69,6 @@
 	padding: 0.5rem 1.5rem;
 	white-space: nowrap;
 	border-radius: 2rem;
-	font-weight: 800;
 	transition: 0.2s ease-in-out;
 	font-size: 1.5rem;
 	cursor: pointer;
@@ -99,5 +107,19 @@
 	}
 	.found-project {
 		margin: 4rem 2rem;
+	}
+	.project-btn {
+		font-size: 1rem;
+	}
+	.desc-text p {
+		font-size: 1.1rem;
+	}
+	.found-project p {
+		font-size: 1.3rem;
+		padding: 1rem 0;
+	}
+
+	.project-cards h4 {
+		font-size: 1.5rem;
 	}
 }
