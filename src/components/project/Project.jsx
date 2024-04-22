@@ -8,7 +8,7 @@ function Project() {
 	return (
 		<div className="project">
 			<h2>Projects we are currently involved</h2>
-			<p>Click to more to explore further options</p>
+			<p>Click on more to explore further</p>
 
 			<div className="projectCards">
 				{projectData.map((data) => {
